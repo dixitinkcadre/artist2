@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<title>Edit Profile</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.idealforms.css">
+       <link rel="stylesheet" href="css/font-awesome.min.css" />
+       <link rel="stylesheet" type="text/css" href="css/jquerysctipttop.css">
+       <link rel="stylesheet" type="text/css" href="css/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custome-angular.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+<style>
+.form-control-admin{
+    background: #fff;
+    border: 1px solid #f1f2f2;
+    box-shadow: none;
+    border-radius: 4px;
+    color: #939598;
+	padding:10px;
+	margin:10px;
+
+}
+</style>
+	</head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container">
+        
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header " >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo text-center " href="index.html"><img src="img/logo.png"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+            <li class="dropdown"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Promotions<span>  <img src="images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu page-list">
+                  <li><a href="#">Marketing kit</a></li>
+                 
+                
+                </ul>
+              </li>
+             
+                 <li class="dropdown"><a href="#">Sign Out</a></li>
+            </ul>
+            
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+        
+   <section  class="main-bg">
+   <div id="exTab1" >	
+       <ul class="nav nav-pills">
+			<li class="active"><a  href="#1a" data-toggle="tab">Approval <sup class="notify">10</sup></a></li>
+			<li><a href="#2a" data-toggle="tab">&nbsp; Master &nbsp;</a></li>
+    		<li><a href="#3a" data-toggle="tab"> Settings </a></li>
+	   </ul>
+
+		<div class="tab-content clearfix">
+			    <div class="tab-pane active" id="1a">
+                <div class="approve-content" >
+           <div  ng-app="tabApp">
+    <div class="row" ng-controller="TabController">
+  	<div class="col-md-2 col-sm-12 col-xs-12">
+  		<ul class="nav nav-pills nav-stacked">
+       	<li ng-class="{ active: isSet(1) }">
+          	<a href ng-click="setTab(1)">Profile</a>
+       	</li>
+       	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Line of work</a>
+       	</li>
+     
+     	</ul>
+  	</div>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+  		<div class="jumbotron">
+       	<div  ng-show="isSet(1)">
+        <div class="panel table-responsive">
+                  <table class="table table-striped table-hover ">
+    			<thead class="data-head">
+    				<tr  class="text-center">
+    					
+    					<th class="text-center"><strong>Profile Pic</strong></th>
+    					<th class="text-center"><strong>Line of Work</strong></th>
+                        <th class="text-center"><strong>Date of Submission</strong></th>
+                        <th class="text-center"><strong>Marketing Kit</strong></th>
+                        <th class="text-center"><strong>Approve</strong></th>
+                        
+    				</tr>
+    			</thead>
+
+    			<tbody class="text-center data-table">
+    				
+    				<tr>
+                        <td >  
+                           <div class="profile-info ">
+                             <img src="img/dp1.jpg" alt="photo" class="img-responsive profile-photo">
+                             <h4>DX</h4>
+                           </div>
+                         
+                         
+                         </td>
+    				    <td ><p class="mb-0">Works</p></a>
+                          
+                          
+                        
+                        </td>
+    					 <td ><p class="mb-0">25/7/2017</p></td>
+    					
+    				
+                    	<td ><div class="form-group text-center col-sm-12 col-xs-12">
+                        <label for="month" class="sr-only"></label>
+                        <select class="form-control" id="day">
+                          <option>-- Marketing kit --</option>
+                          <option>marketing kit</option>
+                    
+                        </select>
+                      </div></td>
+                        <td ><div class="toggle-switch">
+                          <label class="switch switch1">
+                            <input checked="" type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                        </div></td>
+                    </tr>
+					
+                
+	               </tbody>
+
+    		</table>
+               </div>
+          
+         	
+           </div>
+			<div ng-show="isSet(2)">
+             <div class="row m-15">
+                    <div class=" form-group text-center col-lg-5">
+						<h3>New</h3>
+                        <select class="form-control"  multiple="multiple">
+                          <option>Abc</option>
+                          <option>abc</option>
+                    
+                        </select>
+                      </div>
+                      <div class="  form-group text-center align-middle pt-60  col-lg-2">  
+                      <button type="button" class="btn btn-default align-middle"><i class="fa fa-angle-double-right"></i></button><br/>
+                      <button type="button" class="btn btn-default align-middle"><i class="fa fa-angle-double-left"></i></button>
+                        </div>
+                      <div class=" form-group  text-center  col-lg-5 ">  
+                      <h3>Accepted</h3>
+                        <select class="form-control" multiple="multiple">
+                          <option>abc</option>
+                          <option>abc</option>
+                    
+                        </select>
+                        </div>
+                
+         	</div>
+             <div class="row">
+              <div class=" form-group m-15 text-center	 ">
+                <button type="button" class=" m-10 btn btn-primary">Apply</button>
+                      <button type="button" class="m-10 btn btn-primary">Ok</button>
+             <button type="button" class=" m-10 btn btn-primary">Cancel</button>
+             </div>
+             </div>
+            </div>
+        
+  	</div>
+  </div>
+</div>
+          
+          </div>
+         </div>
+	       </div>
+		   <div class="tab-pane" id="2a">
+             
+             <div class="approve-content" >
+           <div  ng-app="tabApp">
+    <div class="row" ng-controller="TabController">
+  	  <div class="col-md-2 col-sm-12 col-xs-12">
+       
+  		<ul class="nav nav-pills nav-stacked">
+       	<li  class="active">
+          	<a> Line of Work</a>
+       	</li>
+     <!--  	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Line of works</a>
+       	</li>
+       	<li ng-class="{ active: isSet(3) }">
+          	<a href ng-click="setTab(3)">Demo</a>
+       	</li>-->
+     	</ul>
+  	</div>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+  		<div class="jumbotron">
+       	  <div  ng-show="isSet(1)">
+             <div class=" container">
+               <div class="jumbotron">
+               <div class="row ">
+                    <div class="  form-group text-center col-lg-5">
+						<h3 class="mb-40">New</h3>
+                         <input type="text" class="form-control" >
+                      </div>
+                      <div class=" pt-80 form-group text-center align-middle pt-60  col-lg-2">  
+                        <button type="button" class="btn btn-default align-middle"><i class="fa fa-angle-double-right"></i></button><br/>
+                      
+                      </div>
+                      <div class="form-group  text-center  col-lg-5">  
+                      <h3>Master Data</h3>
+                        <select class="form-control" multiple="multiple">
+                          <option>abc</option>
+                          <option>abc</option>
+                        </select>
+                        <button type="button" class=" m-15 btn btn-primary">Remove</button>
+                      </div>
+                
+         	</div>
+               <div class="row ">
+                <div class="form-group  text-center  "> 
+                  <button type="button" class=" btn btn-primary">Apply</button>
+                 </div>
+               </div>
+               
+               </div>
+             </div>
+         </div>
+     </div>
+          
+    </div>
+         </div>
+	               
+			</div>
+		   </div>
+		   </div>
+           <div class="tab-pane" id="3a">
+              <div class="approve-content" >
+           <div  ng-app="tabApp">
+    <div class="row" ng-controller="TabController">
+  	  <div class="col-md-2 col-sm-12 col-xs-12">
+       
+  		<ul class="nav nav-pills nav-stacked">
+       	<li  class="active">
+          	<a >Marketing Kit</a>
+       	</li>
+     <!--  	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Line of works</a>
+       	</li>
+       	<li ng-class="{ active: isSet(3) }">
+          	<a href ng-click="setTab(3)">Demo</a>
+       	</li>-->
+     	</ul>
+  	</div>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+  		<div class="jumbotron">
+       	<div  ng-show="isSet(1)">
+          <div class="admin-mkt ">
+              <div class="jumbotron">
+               
+                <div class="row">
+                <div class="col-lg-1">
+                  <div class="form-group  ">
+                      <label for="inputPassword" class="col-form-label">Size Limit : <br/> (per user)</label>
+                   </div>
+                </div>
+                <div class="col-lg-2 ">
+                    <div class="form-group  ">
+                         <input type="text" class="form-control" >
+                    
+                    </div>
+                   
+                </div>
+                <div class="col-lg-9">
+                  <div class="form-group  ">
+                    <span>MB</span>
+                 </div>
+                
+                </div>
+                    
+                    
+                </div>
+                <div class="row ">
+              
+                <div class="col-lg-2 text-center col-xs-offset-1">    <div class="form-group  "> 
+                       <button type="button" class=" btn btn-primary">Apply</button>
+                    </div>
+ </div>
+               	
+               
+               </div>
+              </div>
+    
+		<!--<div ng-show="isSet(2)">
+          <h1>Work Info</h1>
+      	</div>
+        <div ng-show="isSet(3)">
+          <h1>Demo</h1>
+        </div>-->
+  	</div>
+  </div>
+</div>
+          
+          </div>
+         </div>
+	               
+			</div>
+		   </div>
+           
+           
+           
+           
+  </div>
+     </div>
+  </section>
+
+
+
+<br>
+<br>
+<br>
+
+
+    <!-- Footer
+    ================================================= -->
+ <footer id="footer">
+    
+      <div class="copyright">
+       <a href="img/privacy.pdf">Privacy Policy</a>
+        <a href="img/terms.pdf">Terms of Services</a>
+      </div>
+</footer>
+    
+    
+    
+    <!--Buy button-->
+   
+    <!-- Scripts
+    ================================================= -->
+        <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+   
+    <script src="js/script.js"></script>
+    <script>angular.module('TabsApp', [])
+.controller('TabsCtrl', ['$scope', function ($scope) {
+    $scope.tabs = [{
+            title: 'One',
+            url: 'one.tpl.html'
+        }, {
+            title: 'Two',
+            url: 'two.tpl.html'
+        }, {
+            title: 'Three',
+            url: 'three.tpl.html'
+    }];
+
+    $scope.currentTab = 'one.tpl.html';
+
+    $scope.onClickTab = function (tab) {
+        $scope.currentTab = tab.url;
+    }
+    
+    $scope.isActiveTab = function(tabUrl) {
+        return tabUrl == $scope.currentTab;
+    }
+}]);</script>
+    <script>
+    angular.module('tabApp', [])
+  .controller('TabController', ['$scope', function($scope) {
+    $scope.tab = 1;
+
+    $scope.setTab = function(newTab){
+      $scope.tab = newTab;
+    };
+
+    $scope.isSet = function(tabNum){
+      return $scope.tab === tabNum;
+    };
+}]);
+      
+    </script>
+  
+   <script>
+    angular.module('tabApps', [])
+  .controller('TabControllers', ['$scope', function($scope) {
+    $scope.tab = 1;
+
+    $scope.setTab = function(newTab){
+      $scope.tabs = newTab;
+    };
+
+    $scope.isSet = function(tabNum){
+      return $scope.tab === tabNum;
+    };
+}]);
+      
+    </script>
+    
+  </body>
+
+</html>

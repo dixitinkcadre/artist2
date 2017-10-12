@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="index, follow" />
+		<title>Artist</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+				<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.idealforms.css">
+       <link rel="stylesheet" href="css/font-awesome.min.css" />
+       <link rel="stylesheet" type="text/css" href="css/jquerysctipttop.css">
+       <link rel="stylesheet" type="text/css" href="css/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custome-angular.css">
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    
+    <!--Favicon-->
+
+	</head>
+	<body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container">
+        
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header " >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo text-center " href="index.html"><img src="img/logo.png"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+          
+           
+              </li>
+             
+              <!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span>  <img src="images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu page-list">
+                  <li><a href="#">Demo</a></li>
+                  <li><a href="#">demo</a></li>
+                  <li><a href="#">demo</a></li>
+                  <li><a href="#">demo</a></li>
+                
+                </ul>
+              </li>-->
+             
+                 <li class="dropdown" style=" padding: 0 3px;">
+                <input class="dropdown-toggle form-control input-group-lg" type="text"  placeholder="Your Email"/>
+              </li>
+                <li class="dropdown">
+                <input  class=" dropdown-toggle form-control input-group-lg"  type="password" placeholder="Password"/> </li>
+                 
+                   <li style="margin:15px 8px !important;">
+                <button class="btn btn-primary">Log In </button> </li>
+                 <li class="dropdown" ><a href="#" style="font-weight:500 !important;" >Forgot password ?</a></li>
+            </ul>
+            
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+    
+    <!-- Landing Page Contents
+    ================================================= -->
+    	
+      <div class="regi-bg" >
+         <div class="container wrapper" >
+           
+          <div class="row">
+        	<div class="col-lg-4 col-sm-5">
+            <div class="intro-texts">
+            
+              <button class="btn btn-primary facebook"><i class="fa fa-facebook"></i>  &nbsp;Login with Facebook</button>&nbsp;<br/>
+              <button class="btn btn-primary twitter"><i class="fa fa-twitter"></i> &nbsp;Login with twitter</button>
+            </div>
+          </div>
+        	<div class="col-sm-5  col-sm-offset-3 ">
+            <div class="reg-form-container"> 
+            
+              <!-- Register/Login Tabs-->
+             <!--  <div class="reg-options">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a href="#register" data-toggle="tab">Register</a></li>
+                  
+                </ul>
+              </div>-->
+              
+              <!--Registration Form Contents-->
+              <div class="tab-content">
+                <div class="tab-pane active" id="register">
+                  <h3>Promote your peers and get promoted in return.</h3>
+                  <p class="text-muted">Get Started - It's free</p>
+
+                  <!--Register Form-->
+                  <form name="registration_form" id='registration_form' class="form-inline">
+                    <div class="row">
+                      <div class="form-group col-xs-6">
+                        <label for="firstname" class="sr-only">First Name</label>
+                        <input id="firstname" class="form-control input-group-lg" type="text" name="firstname" title="Enter first name" placeholder="First name"/>
+                      </div>
+                
+                    <div class="form-group col-xs-6">
+                        <label for="lastname" class="sr-only">Last Name</label>
+                        <input id="lastname" class="form-control input-group-lg" type="text" name="lastname" title="Enter last name" placeholder="Last name"/>
+                      </div>
+                    
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="email" class="sr-only">Email</label>
+                        <input  class="form-control input-group-lg" type="text"  placeholder="Your Email"/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="password" class="sr-only">Password</label>
+                        <input class="form-control input-group-lg" type="password"   placeholder="Password"/>
+                      </div>
+                    </div>
+ 
+                  </form><!--Register Now Form Ends-->
+              <br>
+                  <button class="btn btn-primary">Register Now</button>
+                </div><!--Registration Form Contents Ends-->
+                
+                <!--Login-->
+                <!--<div class="tab-pane" id="login">
+                  <h3>Login</h3>
+                  <p class="text-muted">Log into your account</p>
+                  
+              
+                  <form name="Login_form" id='Login_form'>
+                     <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="my-email" class="sr-only">Email</label>
+                        <input id="my-email" class="form-control input-group-lg" type="text" name="Email" title="Enter Email" placeholder="Your Email"/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="my-password" class="sr-only">Password</label>
+                        <input id="my-password" class="form-control input-group-lg" type="password" name="password" title="Enter password" placeholder="Password"/>
+                      </div>
+                    </div>
+                  </form>
+                  <p><a href="#">Forgot Password?</a></p>
+                  <button class="btn btn-primary">Login Now</button>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+         <div>   
+         </div>
+      </div>
+</div>
+ <footer>
+<footer id="footer">
+    
+      <div class="copyright">
+       <a href="img/privacy.pdf">Privacy Policy</a>
+        <a href="img/terms.pdf">Terms of Services</a>
+      </div>
+		</footer>
+
+
+ 
+    <!-- Scripts
+    ================================================= -->
+     <script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/angular.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+   
+    <script src="js/script.js"></script>
+    <script>
+var $ = jQuery.noConflict();
+
+$(document).ready(function($) {
+    "use strict";
+
+    /* global google: false */
+
+    /* ==============================================
+        Full height home-section
+    =============================================== */
+    
+	var windowHeight = $(window).height(),
+		topSection = $('#hero-section, #hero-slider-section');
+	topSection.css('height', windowHeight);
+
+	$(window).resize(function(){
+		var windowHeight = $(window).height();
+		topSection.css('height', windowHeight);       
+	});
+
+    /* ==============================================
+        Hero slider
+    =============================================== */  
+
+        $('#slides').superslides({
+            play:8000,
+            animation: 'fade',
+            animation_speed: 1000,
+            pagination: false,
+            hashchange: false,
+            scrollable: false
+        });
+});
+</script>
+<script>
+jQuery(document).ready(function($) {
+
+    //Incremental Coutner
+    if ($.isFunction($.fn.incrementalCounter))
+        $("#incremental-counter").incrementalCounter();
+
+    //For Trigering CSS3 Animations on Scrolling
+    if ($.isFunction($.fn.appear))
+        $(".slideDown, .slideUp").appear();
+
+    $(".slideDown, .slideUp").on('appear', function(event, $all_appeared_elements) {
+        $($all_appeared_elements).addClass('appear');
+    });
+
+    //For Header Appearing in Homepage on Scrolling
+    var lazy = $('#header.lazy-load')
+
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 200) {
+            lazy.addClass('visible');
+        } else {
+            lazy.removeClass('visible');
+        }
+    });
+});
+</script>
+    
+	</body>
+
+
+</html>

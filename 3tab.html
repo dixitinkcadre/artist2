@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<title>Edit Profile</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.idealforms.css">
+       <link rel="stylesheet" href="css/font-awesome.min.css" />
+       <link rel="stylesheet" type="text/css" href="css/jquerysctipttop.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+<style>
+
+</style>
+	</head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+    
+       <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                 
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About </a>
+                  
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service </a>
+               
+                  
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span>  <img src="images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu page-list">
+                  <li><a href="#">Demo</a></li>
+                  <li><a href="#">demo</a></li>
+                  <li><a href="#">demo</a></li>
+                  <li><a href="#">demo</a></li>
+                
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-right hidden-sm">
+              <div class="form-group">
+                <i class="icon ion-android-search"></i>
+                <input type="text" class="form-control" placeholder="Search ">
+              </div>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    
+      </nav>
+    </header>
+    <!--Header End-->
+   <div class="bg" >
+    <div class="container">
+
+      <!-- Timeline
+      ================================================= -->
+      <div class="timeline timeline-bg">
+        
+        <div id="page-contents">
+          <div class="row">
+            <div class="edit-profile-container">
+                <div class="block-title title-bg">
+                  <h4 class="grey"><i class="icon ion-android-checkmark-circle"></i>Create Profile</h4>
+                  <div class="line"></div>
+                  <p></p>
+                  <div class="line"></div>
+                </div>
+               <div class="edit-block">
+                 <div class="content">
+<div class="idealsteps-container">
+<nav class="idealsteps-nav">
+<li ><a href="#" > 1<span class="counter">2</span></a></li><li><a href="#" > 2<span class="counter">5</span></a></li><li class="idealsteps-step-active"><a href="#" > 3<span class="counter">3</span></a></li>
+</nav>
+<form action="" novalidate autocomplete="off" class="idealforms">
+<div class="idealsteps-wrap"> 
+
+<!-- Step 1 -->
+
+
+
+<!-- Step 2 -->
+
+
+
+<!-- Step 3 -->
+
+<section class="idealsteps-step">
+
+<div class="field">
+<div><p style="font-size: 20px;">What are the lines of work you would be interested in promoting ?</p></div>
+<label class="main"></label>
+<select name="options" id="" class="drp">
+<option value="default">&ndash; Select an option &ndash;</option>
+<option ></option>
+<option ></option>
+</select>
+<span class="error"></span> </div>
+<script type="text/javascript">
+ //   $(function () {
+//        $("#chkyes").click(function () {
+//            if ($(this).is(":checked")) {
+//                $("#txtyes").show();
+//            } else {
+//                $("#txtyes").hide();
+//            }
+//        });
+//    });
+	function checkdata()
+	{
+		var txtbox=document.getElementById('txtyes');
+		var check= document.getElementById('chkyes');
+		if(check.checked ==true)
+		{
+			txtbox.style.display = "block";
+		}
+		else
+		{
+			txtbox.style.display = "none";
+		}
+		
+	}
+</script>
+<div class="field">
+<div><p style="font-size: 20px;">Have you been trained in any art school or institute ? If yes, which one ?</p></div>
+
+<label class="main ft"></label>
+
+<label onclick="" class="ideal-radiocheck-label">
+<input style="position: absolute; left: -9999px;" name="chkyes" id="chkyes" onclick="checkdata()" type="radio"><span class="ideal-radio"></span>
+Yes</label> &nbsp;
+<label onclick="" class="ideal-radiocheck-label">
+<input style="position: absolute; left: -9999px;" name="chkyes" id="chkyes" onclick="checkdata()" type="radio"><span class="ideal-radio"></span>
+No</label>
+<div >
+ 
+<div class="field" id="txtyes" style="display:none;">
+   <label class="main"></label>
+    <input placeholder="Which School or Institute?" type="text">
+</div>
+</div>
+
+
+ </div>
+
+
+
+<div class="field">
+<div><p style="font-size: 20px;">Any additional information about yourself</p></div>
+<label class="main"></label>
+<input name="username" type="text" placeholder=""  data-idealforms-ajax="ajax.php">
+<span class="error"></span> </div>
+<section></section>
+<div class="field idealforms-field idealforms-field-file">
+<label class="main"><p style="font-size: 20px;font-size: 17px;font-weight: 500;font-family: 'Lato', sans-serif !important;">Profile Picture:</p></label>
+<input tabindex="-1" style="position: absolute; left: -9999px;" class="ideal-file" id="picture" name="picture" multiple="" type="file"><div class="ideal-file-wrap"><input class="ideal-file-filename" type="text"><button tabindex="-1" type="button" class="ideal-file-upload">Upload</button></div>
+<span style="display: none;" class="error">This field is required</span> <i class="icon"></i></div>
+
+<div class="field buttons">
+<label class="main">&nbsp;</label>
+<button type="button" class="prev btn-blue mg-72">&laquo; Prev</button>
+<button type="submit" class="submit btn-blue mg-72">Submit</button>
+</div>
+</section>
+</div>
+<span id="invalid"></span>
+</form>
+</div>
+</div>
+                </div>
+             
+                     
+                </div>
+         
+              
+           </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Footer
+    ================================================= -->
+    <footer id="footer">
+    
+      <div class="copyright">
+        <p>&copy; copyright All rights reserved 2017</p>
+      </div>
+		</footer>
+    
+    
+    
+    <!--Buy button-->
+   
+    <!-- Scripts
+    ================================================= -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+   
+    <script src="js/script.js"></script>
+    
+    
+    
+    
+  </body>
+
+</html>

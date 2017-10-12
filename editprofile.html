@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is social network html5 template available in themeforest......" />
+		<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+		<meta name="robots" content="index, follow" />
+		<title>News Feed | Check what your friends are doing</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.idealforms.css">
+       <link rel="stylesheet" href="css/font-awesome.min.css" />
+       <link rel="stylesheet" type="text/css" href="css/jquerysctipttop.css">
+       <link rel="stylesheet" type="text/css" href="css/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custome-angular.css">
+	</head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+    
+       <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="index.html"><img src="img/logo1.png" ></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-menu">
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About </a>
+                  
+              </li>
+              
+              
+              <li class="dropdown"><a href="#">Contact</a></li>
+            </ul>
+          
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    
+      </nav>
+    </header>
+    <!--Header End-->
+
+    <div id="page-contents">
+    	<div class="container">
+    		<div class="row">
+
+          <!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+    			
+    </div>
+    <div class="row">
+       <div id="page-contents">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="static">
+            <div class="profile-card">
+            	<img src="img/dp1.jpg" alt="user" class="profile-photo" />
+            	<h5><a href="timeline.html" class="text-white">Dixit Prajapati</a></h5>
+            	<a href="#" class="text-white">Update Profile</a>
+            </div>
+            </div>
+              <!--Edit Profile Menu-->
+              <ul class="edit-menu">
+              	<li class="active"><a href="edit-profile-basic.html">Basic Information</a></li>
+              	<!--<li><i class="icon ion-ios-briefcase-outline"></i><a href="edit-profile-work-edu.html">Education and Work</a></li>
+              	<li><i class="icon ion-ios-heart-outline"></i><a href="edit-profile-interests.html">My Interests</a></li>
+                <li><i class="icon ion-ios-settings"></i><a href="edit-profile-settings.html">Account Settings</a></li>
+              	<li><i class="icon ion-ios-locked-outline"></i><a href="edit-profile-password.html">Change Password</a></li>-->
+              </ul>
+            </div>
+            <div class="col-md-7">
+
+              <!-- Basic Information
+              ================================================= -->
+              <div class="edit-profile-container">
+                <div class="block-title">
+                  <!--<h4 class="grey"><i class="icon ion-android-checkmark-circle"></i>Edit basic information</h4>-->
+              
+                 
+                </div>
+                <div class="edit-block">
+                  <form name="basic-info" id="basic-info" class="form-inline">
+                    <div class="row">
+                      <div class="form-group col-xs-6">
+                        <label for="firstname">First name</label>
+                        <input  class="form-control input-group-lg" type="text" name="firstname"  placeholder="First name"  />
+                      </div>
+                      <div class="form-group col-xs-6">
+                        <label for="lastname" class="">Last name</label>
+                        <input  class="form-control input-group-lg" type="text" name="lastname" placeholder="Last name"/>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="work-description">Description</label>
+                        <textarea  name="description" class="form-control" placeholder="Some texts about my work" rows="4" cols="400"></textarea>
+                      </div>
+                    </div>
+                     <div class="row">
+                      <p class="custom-label"><strong>Line of Work</strong></p>
+                      <div class="form-group  col-xs-12">
+                        <label for="month" class="sr-only"></label>
+                        <select class="form-control" id="day">
+                          <option value="Day">Select Work</option>
+                          <option>1</option>
+                          <option>2</option>
+                         
+                        </select>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                     <div class="row">
+                      <div class="form-group  col-xs-12">
+                        <label >Profile Pic</label>
+                        
+                        <input type="file" class=" ">
+                      </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">Save Changes</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+    </div>
+
+    			
+
+          <!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+    			<!--<div class="col-md-2 static">
+            <div class="suggestions" id="sticky-sidebar">
+              <h4 class="grey">Who to Follow</h4>
+              <div class="follow-user">
+                <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                <div>
+                  <h5><a href="timeline.html">Diana Amber</a></h5>
+                  <a href="#" class="text-green">Add friend</a>
+                </div>
+              </div>
+              <div class="follow-user">
+                <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                <div>
+                  <h5><a href="timeline.html">Cris Haris</a></h5>
+                  <a href="#" class="text-green">Add friend</a>
+                </div>
+              </div>
+              <div class="follow-user">
+                <img src="images/users/user-13.jpg" alt="" class="profile-photo-sm pull-left" />
+                <div>
+                  <h5><a href="timeline.html">Brian Walton</a></h5>
+                  <a href="#" class="text-green">Add friend</a>
+                </div>
+              </div>
+              <div class="follow-user">
+                <img src="images/users/user-14.jpg" alt="" class="profile-photo-sm pull-left" />
+                <div>
+                  <h5><a href="timeline.html">Olivia Steward</a></h5>
+                  <a href="#" class="text-green">Add friend</a>
+                </div>
+              </div>
+              <div class="follow-user">
+                <img src="images/users/user-15.jpg" alt="" class="profile-photo-sm pull-left" />
+                <div>
+                  <h5><a href="timeline.html">Sophia Page</a></h5>
+                  <a href="#" class="text-green">Add friend</a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Footer
+    ================================================= -->
+    <footer id="footer">
+    
+      <div class="copyright">
+        <p>Thunder Team © 2016. All rights reserved</p>
+      </div>
+		</footer>
+    
+    <!--preloader-->
+  
+    
+    <!-- Scripts
+    ================================================= -->
+  <script src="js/angular.min.js"></script>
+     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
